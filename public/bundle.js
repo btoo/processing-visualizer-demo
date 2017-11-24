@@ -71232,14 +71232,13 @@ module.exports = p5;
 new p5(s => {
 
   const np = 300;
-  let startcol;
+  let startcol = s.random(255);
 
   s.setup = _ => {
     s.createCanvas(document.documentElement.clientWidth, document.documentElement.clientHeight);
     s.background(255);
     s.noFill();
     s.noiseSeed(s.random(100));
-    startcol = s.random(255);
   };
 
   s.draw = _ => {
