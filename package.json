@@ -1,0 +1,23 @@
+{
+  "name": "processing-visualizer-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "brian",
+  "license": "MIT",
+  "dependencies": {
+    "p5": "^0.5.16",
+    "date-fns": "^1.28.5",
+    "serve": "^6.0.2"
+  },
+  "devDependencies": {
+    "rollup": "^0.51.8",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "serve public"
+  }
+}
